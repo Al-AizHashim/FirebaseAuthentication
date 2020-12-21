@@ -21,6 +21,7 @@
         android:drawableStart="@drawable/ic_baseline_person_24"
         android:drawablePadding="12dp"
         android:hint="Email"
+        android:inputType="textEmailAddress"
         android:textColorHint="#ccc"
         android:textColor="#000" />
 
@@ -38,7 +39,8 @@
         android:inputType="textPassword"
         android:textColorHint="#ccc"
         android:textColor="#000" />
-    <EditText
+
+    <!-- <EditText
         android:id="@+id/confirm_passwordET"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -51,7 +53,8 @@
         android:background="@drawable/custom_shape"
         android:inputType="textPassword"
         android:textColorHint="#ccc"
-        android:textColor="#000" />
+        android:textColor="#000" /> -->
+
 
 
     <Button

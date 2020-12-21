@@ -19,23 +19,25 @@ class SignupActivity : AppCompatActivity() {
     lateinit var mAuth: FirebaseAuth
     var email: String = ""
     var password: String = ""
-    val singUpIntent = Intent(this, MainActivity::class.java)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_signup)
         signUpEmail = findViewById(R.id.email_sign_up_ET)
         signUpPassword = findViewById(R.id.password_sign_up_ET)
         signupBtn = findViewById(R.id.sign_up_btn)
-        setContentView(R.layout.activity_signup)
 
         signupBtn.setOnClickListener {
+            email=signUpEmail.text.toString()
+            password=signUpPassword.text.toString()
             registration()
         }
     }
 
     fun registration() {
+        val singUpIntent = Intent(this, MainActivity::class.java)
         mAuth = FirebaseAuth.getInstance()
         mAuth.createUserWithEmailAndPassword(email, password)
-
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Log.d("createUser", "createUserWithEmail:success")
