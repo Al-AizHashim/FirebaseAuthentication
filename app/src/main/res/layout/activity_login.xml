@@ -7,9 +7,59 @@
     android:orientation="vertical"
     android:padding="40dp"
     tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/lock"
+        android:backgroundTint="#000"
+        android:layout_gravity="center"/>
 
 
+    <EditText
+        android:id="@+id/usernameET"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_shape"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="12dp"
+        android:hint="user name"
+        android:textColorHint="#ccc"
+        android:textColor="#000" />
 
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="12dp"
+        android:hint="Password"
+        android:background="@drawable/custom_shape"
+        android:inputType="textPassword"
+        android:textColorHint="#ccc"
+        android:textColor="#000" />
+
+
+    <Button
+        android:id="@+id/login_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Login" />
+    <TextView
+        android:id="@+id/sing_up_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold|italic"
+        android:textColor="#4952d3"
+        android:layout_gravity="center"
+        android:text="Sign up now"/>
 
 
 
