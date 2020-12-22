@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <item
+        android:id="@+id/recent"
+        android:title="@string/recent"
+        android:icon="@drawable/ic_baseline_access_time_24"
+        />
+    <item
+        android:id="@+id/starred"
+        android:title="@string/starred"
+        android:icon="@drawable/ic_baseline_star_24"
+        />
+    <item
+        android:id="@+id/upload"
+        android:title="@string/uploads"
+        android:icon="@drawable/ic_baseline_cloud_upload_24"
+        />
+    <item
+        android:id="@+id/signout"
+        android:title="@string/signout"
+        android:icon="@drawable/ic_baseline_arrow_back_24"
+        />
+
+</menu>

@@ -55,7 +55,6 @@ class LoginActivity : AppCompatActivity() {
 
             }
 
-
     }
 
 
