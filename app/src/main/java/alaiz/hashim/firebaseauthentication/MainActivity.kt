@@ -76,6 +76,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.signout -> {
                     mAuth = FirebaseAuth.getInstance()
                     mAuth.signOut()
+                    finish()
                     val intent=Intent(this , LoginActivity::class.java)
                     startActivity(intent)
                     true
@@ -108,5 +109,12 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "$title is opened", Toast.LENGTH_LONG).show()
     }
 
-
+    fun signOut(context: Context): Task<Void?>? {
+        return Tasks.whenAll(
+        ).continueWith { task ->
+            task.result // Propagate exceptions
+            mAuth.signOut()
+            null
+        }
+    }
 }
